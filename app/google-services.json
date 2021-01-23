@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "966269966046",
+    "project_id": "meetmap-1",
+    "storage_bucket": "meetmap-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966269966046:android:ce6d0b0d8443a22ea5144f",
+        "android_client_info": {
+          "package_name": "org.meetmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966269966046-eem395aj70sl1n2iivaqg5iq5kbtgqkv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.meetmap",
+            "certificate_hash": "06282da197fbd90cfbbd4f180c80d5e74326d91d"
+          }
+        },
+        {
+          "client_id": "966269966046-j8mhcgjahic10s79b5d9rvhd378vnfde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9yr-6Esy-zXrrY5mfYas9ssFVhYFs3sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966269966046-j8mhcgjahic10s79b5d9rvhd378vnfde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
