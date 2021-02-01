@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/points_fragment_dest">
+    <fragment
+        android:id="@+id/points_fragment_dest"
+        android:name="org.meetmap.points.PointsFragment"
+        android:label="MeetMap"
+        tools:layout="@layout/fragment_points">
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/points_fragment_dest"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="@string/title_map" />
+
+    <item
+        android:id="@+id/navigation_chats"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/title_chats" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/title_settings" />
+</menu>
