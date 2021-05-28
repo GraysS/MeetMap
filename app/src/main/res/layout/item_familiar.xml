@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_friends_item"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_familiar_nick"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_20dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:lines="1"
+        tools:text="antonfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfggffdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfgfggfkjgfgoghrjgkrjrkthrtkjtrjtrjtrhtjh,tkrhtrtjrtkhrtkrjthrtkrkt"/>
+
+</LinearLayout>

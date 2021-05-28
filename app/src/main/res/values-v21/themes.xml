@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
-        <!-- Customize your theme here. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowActivityTransitions">true</item>
-
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- For Android sdk versions 26+. -->
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/opensans_font</item>
+        <!-- Target Android sdk versions < 26 and > 14. -->
+        <item name="fontFamily">@font/opensans_font</item>
     </style>
 </resources>

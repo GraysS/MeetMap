@@ -4,10 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/points_fragment_dest">
+
     <fragment
         android:id="@+id/points_fragment_dest"
-        android:name="org.meetmap.points.PointsFragment"
-        android:label="MeetMap"
+        android:name="org.meetmap.view.points.PointsFragment"
+        android:label="My points"
         tools:layout="@layout/fragment_points">
+    </fragment>
+
+    <fragment
+        android:id="@+id/familiar_fragment_dest"
+        android:name="org.meetmap.view.familiar.FamiliarFragment"
+        android:label="Familiars"
+        tools:layout="@layout/fragment_familiar">
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_fragment_dest"
+        android:name="org.meetmap.view.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
     </fragment>
 </navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_message"
+    app:startDestination="@id/message_fragment_dest">
+
+    <fragment
+        android:id="@+id/message_fragment_dest"
+        android:name="org.meetmap.view.message.MessageFragment"
+        tools:layout="@layout/fragment_message">
+
+        <argument
+            android:name="familiar"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="org.meetmap.data.model.domain.Familiar"
+            />
+
+        <action
+            android:id="@+id/action_message_fragment_dest_to_meet_fragment_dest"
+            app:destination="@id/meet_fragment_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/meet_fragment_dest"
+        android:name="org.meetmap.view.meet.MeetFragment"
+        android:label="Meet"
+        tools:layout="@layout/fragment_meet">
+
+        <argument
+            android:name="familiar"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="org.meetmap.data.model.domain.Familiar"
+            />
+    </fragment>
+
+</navigation>

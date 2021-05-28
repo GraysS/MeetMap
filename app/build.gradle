@@ -46,6 +46,7 @@ android {
 dependencies {
 
     // App dependencies
+    implementation "androidx.activity:activity-ktx:1.2.0-alpha02"
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
     implementation "com.google.android.material:material:$materialVersion"
     implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
@@ -54,7 +55,7 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:$androidXLegacySupport"
     implementation "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
     implementation "androidx.multidex:multidex:$multiDexVersion"
-
+    
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
@@ -62,13 +63,9 @@ dependencies {
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
 
-    // Room (database local)
-    implementation "androidx.room:room-runtime:$roomVersion"
-    implementation "androidx.room:room-ktx:$roomVersion"
-    kapt "androidx.room:room-compiler:$roomVersion"
-
     // Architecture Components
     implementation "androidx.lifecycle:lifecycle-extensions:$archLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$archLifecycleVersion"
     kapt "androidx.lifecycle:lifecycle-compiler:$archLifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$archLifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$archLifecycleVersion"
@@ -79,6 +76,9 @@ dependencies {
     implementation platform("com.google.firebase:firebase-bom:$firebaseBoomVersion")
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation "com.google.firebase:firebase-firestore-ktx:$firebaseFirestoreVersion"
+
+    implementation 'com.chootdev:recycleclick:1.0.0'
 
     // Google Maps
     implementation "com.google.android.gms:play-services-maps:$googleMapVersion"

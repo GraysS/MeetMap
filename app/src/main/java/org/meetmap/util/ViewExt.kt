@@ -1,6 +1,8 @@
 package org.meetmap.util
 
+import android.content.Context
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
@@ -13,6 +15,18 @@ import org.meetmap.Event
  */
 fun View.showSnackbar(snackbarText: String, timeLength: Int) {
     Snackbar.make(this, snackbarText, timeLength).run {
+        show()
+    }
+}
+
+fun View.showSnackbar(snackbarText: Int, timeLength: Int) {
+    Snackbar.make(this, snackbarText, timeLength).run {
+        show()
+    }
+}
+
+fun Context.showToast(toastText: String, timeLength: Int) {
+    Toast.makeText(this, toastText, timeLength).run {
         show()
     }
 }

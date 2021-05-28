@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/v_derider"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_self_message"
+            tools:itemCount="20"/>
+
+        <View
+            android:id="@+id/v_derider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/et_message"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/ib_sendMessage"
+            android:background="@null"
+            android:hint="@string/et_message"
+            android:textColor="@color/black"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLines="5"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+
+
+        <ImageButton
+            android:id="@+id/ib_sendMessage"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/ic_baseline_send_24"
+            android:minWidth="0dp"
+            android:minHeight="0dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
